@@ -1,0 +1,244 @@
+/* banner styles */
+.hero-section-container{
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+
+
+
+.img-component{
+            position: relative;
+        }
+
+.img-component .img-container{
+
+            aspect-ratio: 375/250;
+            overflow: hidden;
+        }
+
+.img-component .img-container ,  .img-component .img-container  img{
+
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        }
+
+.img-component::before{
+    
+            content: "";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top:0;
+            left: 0;
+            background-color: rgba(11, 3, 3, 0.346);
+
+        }
+
+
+.hero-section-container .hero-section{
+
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            background-color: transparent;
+
+        }
+
+.hero-section-container .hero-section{
+
+        width: 100%;
+        min-height: 200px;
+        /* background-color:rgba(114, 182, 82, 0.687); */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        }
+
+.hero-section .hero-content{
+
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        }
+
+.hero-content .hero-title{
+
+        color: var(--clr-white);
+        font-size: 20px;
+        font-weight: bolder;
+        text-align: center;
+        text-transform: capitalize;
+        letter-spacing: 1px;
+        padding-left: 10px ;
+        padding-right: 10px;
+
+
+        }
+
+
+
+
+
+.hero-content .desc{
+
+        color: var(--clr-white);
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+        text-transform: capitalize;
+        letter-spacing: 1px;
+        padding-left: 10px;
+        padding-right: 10px;
+        }
+
+.button-container .light-btn{
+        
+        width: 140px;
+        min-height: 40px;
+        /* color:#3777AA ; */
+        color:#aa4637 ;
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+        text-transform: capitalize;
+        letter-spacing: 1px;
+        background-color: var(--clr-white);
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        border-radius: 20px;
+        margin-bottom: 20px;
+
+        animation-name: bonce;
+        animation-duration: 1s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+
+
+
+        }
+
+
+.button-container .light-btn:hover{
+                
+            background-color: rgb(234, 234, 234)
+                
+        }
+
+
+@keyframes bonce {
+
+        0%{
+        transform: scale(0.8);
+        }
+
+        100%{
+        transform: scale(1.02);
+        }
+
+        }
+
+@media screen and (min-width:992px) {
+
+.hero-section-container{
+            width: 100%;
+            position: relative;
+        }
+
+.img-component{
+            position: relative;
+        }
+
+.img-component::before{
+            content: "";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top:0;
+            left: 0;
+            background-color: rgba(11, 3, 3, 0.346);
+
+        }
+
+.img-component .img-container{
+
+            aspect-ratio:1920/750;
+            overflow: hidden;
+
+        }
+
+.home-page .img-component .img-container{
+
+        aspect-ratio:1920/800;
+        overflow: hidden;
+        }
+
+.img-component .img-component,.img-component .img-component img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+.hero-section-container .hero-section{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            background-color: transparent;
+
+        }
+.hero-content .hero-title{
+
+        font-size:50px ;
+
+        }
+
+.hero-content .desc{
+
+        font-size: 30px;
+        }
+
+
+
+.button-container .light-btn{
+
+        width: 200px;
+        min-height: 45px;
+        font-size: 25px;
+
+        /* animation-name: bonce;
+        animation-duration: 1s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-direction: alternate; */
+        margin-bottom: 0;
+
+        }
+
+
+        /* @keyframes bonce {
+
+        0%{
+            transform: scale(0.8);
+        }
+
+        100%{
+            transform: scale(1.02);
+        }
+
+        } */
+
+}

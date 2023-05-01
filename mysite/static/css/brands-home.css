@@ -1,0 +1,84 @@
+        /*  vehicles brand styles */
+
+        .brands-section-container{
+            width: 100%;
+            height: 100%;
+            background-color: rgb(247, 248, 236);
+        }
+
+
+        .single-brand{
+
+            width: 100%;
+            box-shadow: 1px 1px 10px 2px var(--clr-white);
+            border-radius:10px ;
+            transition: var(--primary-transition);
+            background-color: var(--clr-white);
+            /* border: 2px solid var(--section-underline-bg);  */
+            
+
+        }
+
+
+       
+        
+
+        .single-brand:hover{
+
+            transform: translateY(-6px) scale(1.002);
+        }
+
+         .single-brand .img-container{
+
+            width: 250px;
+            height: 200px;
+            overflow: hidden;
+            /* border: 2px solid red; */
+        }
+
+        .single-brand .img-container img{
+
+            width: 100%;
+            height: 100%;
+            object-fit: cover; 
+            border-radius: 10px;          
+        }
+
+        .brands-center .three-template-column{
+            /* display: grid;
+            grid-template-columns: repeat(5,1fr);
+            justify-content: center;
+            align-items: center; */
+            display: flex;
+            flex-direction: row; 
+            gap: 15px;
+            overflow-x:scroll ;
+
+        }
+
+        .brands-section::-webkit-scrollbar{
+            width: 0; 
+            
+    }
+    
+
+/* 
+
+            animation-name: scroll;
+            animation-duration: 10s;
+            animation-timing-function: linear;
+            animation-direction:alternate;
+            animation-iteration-count: infinite; 
+
+    @keyframes scroll {
+
+0%{
+    transform: translateX(0%);
+}
+
+100%{
+    transform: translateX(-3000px);
+}
+
+
+} */

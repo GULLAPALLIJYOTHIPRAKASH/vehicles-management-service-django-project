@@ -1,0 +1,181 @@
+ /* contact us home styles */
+
+ .contact-section-container{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.539);
+}
+
+
+.single-contact{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    transition: var(--primary-transition);
+}
+
+.single-contact:hover{
+
+    transform: translateY(-6px) scale(1.002);
+
+}
+
+
+.free_pickup-bg{
+  background-color: #e8eef9;
+  display: none;
+}
+
+
+.available-bg{
+  background-color: #e7f9d2 ;
+}
+
+.email-bg{
+
+    background-color: #f9f2d2;
+
+}
+
+.mobile-bg{
+
+    background-color: #f9dad2;
+
+}
+
+.parts-bg{
+
+    background-color: #e1effe;
+    display: none;
+
+
+}
+
+.warranty-bg{
+
+    background-color: #e4fee1;
+    display: none;
+
+}
+
+
+.wallet-bg{
+
+        background-color: #f0e1fe;
+
+}
+
+.worker-bg{
+    background-color: #fce1fe;
+    display: none;
+}
+
+.team-bg{
+    background-color: #ebffef;
+    display: none;
+}
+
+
+
+
+
+
+.single-contact .img-container{
+     width: 50px;
+     height: 50px;
+    overflow: hidden;
+    border-radius: 10px;
+    
+}
+
+.single-contact .img-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+} 
+.contact-info .contact-desc{
+
+    color: var(--section-title);
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+
+}
+
+
+.contact-center .three-template-column{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.button-container .contact-btn{
+
+    width: 200px;
+    min-height: 45px;
+    background-color:var( --section-underline-bg);
+    color: var(--clr-white);
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    transition: var(--primary-transition);
+}
+
+.button-container .contact-btn:hover{
+
+    background-color: rgb(225, 101, 111);
+}
+
+.button-container .contact-btn:active{
+
+    transform: var(--primary-scale);
+}
+
+
+@media screen and (min-width: 702px) {
+
+    .contact-center .three-template-column{
+
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+
+
+    }
+
+    .free_pickup-bg,.warranty-bg{
+        display: block;
+    }
+
+}
+
+@media screen and (min-width: 992px) {
+
+    .contact-center .three-template-column{
+
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+
+
+    }
+
+    .free_pickup-bg,.warranty-bg,.parts-bg,.worker-bg,.team-bg{
+        display: block;
+    }
+
+
+    
+}

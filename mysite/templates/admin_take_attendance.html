@@ -1,0 +1,136 @@
+
+{% extends 'adminbase.html' %}
+
+{% load widget_tweaks %}
+
+
+
+
+
+
+<head>
+  
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+  {% block content %}
+  <style >
+    a:link {
+      text-decoration: none;
+    }
+    
+   
+    h6 {
+      text-align: center;
+    }
+
+    .row {
+      margin: 100px;
+    }
+
+    .btnSubmit {
+      text-align: center;
+    }
+    .xyz{
+      
+      display: table;
+      margin-right: auto;
+      margin-left: auto;
+            }
+    .sidebar{
+        top:0px;
+    }
+
+    .attendence-form{
+
+      width: 80vw;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+    }
+
+ .sub-btn{
+            width: 200px;
+            min-height: 45px;
+            color: var(--clr-white);
+            background-color: var(--section-underline-bg);
+            font-size: 16px;
+            font-weight: bold;
+            text-transform: capitalize;
+            letter-spacing: 1px;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            transition: var(--primary-transition);
+            margin-top: 30px;
+          }
+
+         
+
+    </style>
+ 
+</head>
+
+
+
+
+
+
+
+
+
+<form class="box xyz"  method="post"  autocomplete="off" class="">
+
+
+    <div class="attendence-form paddingTopDesktop-fifty paddingTopMobile-fifty">
+
+      <div class="panel panel-primary contact-form">
+        <div class="panel-heading">
+          <h6 class="panel-title">Attendance</h6>
+
+        </div>
+
+        <table class="table table-hover" id="dev-table">
+          <thead>
+
+            <tr>
+              <th>Mechanic Name</th>
+              <th>Present/Absent</th>
+            </tr>
+          </thead>
+
+
+          {% csrf_token %}
+          {%for m in mechanics%}
+          <tr>
+            <td>{{m.get_name}}</td>
+            <td>{{aform.present_status}}</td>
+          </tr>
+          {%endfor%}
+
+
+
+        </table>
+        {% render_field aform.date class="name  mobile-width desktop-width" placeholder="Enter Date mm/dd/yyyy" %}
+        <input type="submit" style="margin-left: 200px;
+
+    margin-top: 20px;
+    margin-bottom: 20px;    background-color: #ffec00;" name="submit" value="submit">
+      </div>
+
+
+    
+  </div>
+</form>
+
+{% endblock content %}
+
+
+

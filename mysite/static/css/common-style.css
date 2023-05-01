@@ -1,0 +1,260 @@
+:root{
+
+    --clr-white:white;
+    --clr-black:black;
+    --clr-thin-black:#1b1e28;
+    --primary-transition:all 0.3s linear;
+    --secondary-transition:all 0.2s linear;
+    --primary-scale:scale(0.92);
+    --section-title: #2d3942;
+    --section-underline-bg: rgb(244, 77, 91);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+html::-webkit-scrollbar{
+    width: 0.6vw;
+}
+html::-webkit-scrollbar-track{
+    background-color: thistle;
+
+}
+
+html::-webkit-scrollbar-thumb{
+   
+background-color:var(--clr-thin-black);
+
+}
+
+html::-webkit-scrollbar-thumb:hover{
+    background-color: #2d3942;
+   
+}
+
+
+
+
+*,::after,::before{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+*:focus{
+
+    outline-color:white;
+    outline-width: 2px;
+    transition: var(--primary-transition);
+
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.wrapper{
+    max-width: 1250px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left:20px ;
+    padding-right: 20px;   
+}
+
+
+.text-container{
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* padding classes */
+@media screen and (max-width: 991px) {
+    .paddingTopMobile-ten {
+    padding-top: 10px !important;
+    }
+    .paddingTopMobile-twenty {
+    padding-top: 20px !important;
+    }
+    .paddingTopMobile-thirty {
+    padding-top: 30px !important;
+    }
+    .paddingTopMobile-forty {
+    padding-top: 40px !important;
+    }
+    .paddingTopMobile-fifty {
+    padding-top: 50px !important;
+    }
+    .paddingBottomMobile-ten {
+    padding-bottom: 10px !important;
+    }
+    .paddingBottomMobile-twenty {
+    padding-bottom: 20px !important;
+    }
+    .paddingBottomMobile-thirty {
+    padding-bottom: 30px !important;
+    }
+    .paddingBottomMobile-forty {
+    padding-bottom: 40px !important;
+    }
+    .paddingBottomMobile-fifty {
+    padding-bottom: 50px !important;
+    }
+    }
+@media screen and (min-width: 992px) {
+    .paddingTopDesktop-ten {
+    padding-top: 10px !important;
+    }
+    .paddingTopDesktop-twenty {
+    padding-top: 20px !important;
+    }
+    .paddingTopDesktop-thirty {
+    padding-top: 30px !important;
+    }
+    .paddingTopDesktop-forty {
+    padding-top: 40px !important;
+    }
+    .paddingTopDesktop-fifty {
+    padding-top: 50px !important;
+    }
+    .paddingTopDesktop-sixty {
+    padding-top: 60px !important;
+    }
+    .paddingTopDesktop-seventy {
+    padding-top: 70px !important;
+    }
+    .paddingTopDesktop-eighty {
+    padding-top: 80px !important;
+    }
+    .paddingTopDesktop-ninety {
+    padding-top: 90px !important;
+    }
+    .paddingTopDesktop-hundred {
+    padding-top: 100px !important;
+    }
+    .paddingBottomDesktop-ten {
+    padding-bottom: 10px !important;
+    }
+    .paddingBottomDesktop-twenty {
+    padding-bottom: 20px !important;
+    }
+    .paddingBottomDesktop-thirty {
+    padding-bottom: 30px !important;
+    }
+    .paddingBottomDesktop-forty {
+    padding-bottom: 40px !important;
+    }
+    .paddingBottomDesktop-fifty {
+    padding-bottom: 50px !important;
+    }
+    .paddingBottomDesktop-sixty {
+    padding-bottom: 60px !important;
+    }
+    .paddingBottomDesktop-seventy {
+    padding-bottom: 70px !important;
+    }
+    .paddingBottomDesktop-eighty {
+    padding-bottom: 80px !important;
+    }
+    .paddingBottomDesktop-ninety {
+    padding-bottom: 90px !important;
+    }
+    .paddingBottomDesktop-hundred {
+    padding-bottom: 100px !important;
+    }
+    }
+
+
+    .heading-section .title{
+
+        color:var(--section-title);
+        font-size: 25px;
+        font-weight: bold;
+        text-transform: capitalize;
+        letter-spacing: 1px;
+        text-align: center;
+    
+    
+    }
+    
+     .heading-section .underline{
+    
+        width: 100px;
+        height: 5px;
+        background-color:var(--section-underline-bg);
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        
+    }
+
+
+
+/* service button container car img  */
+
+.button-container{
+
+    display: flex;
+    /* border: 2px solid red; */
+    flex-direction: row;
+    justify-content: center;
+    align-items:center ;
+}
+    .button-container .change-btn{
+        color: var(--section-underline-bg);
+        font-size: 45px;
+        font-weight: bolder;
+        padding: 10px;
+        border-radius: 10px;
+        transition: var(--primary-transition);
+    }
+
+
+    .button-container .change-btn:hover{
+        color:var(--section-title);
+    }
+
+    .button-container .change-btn:active{
+
+        transform: var(--primary-scale);
+    }
+
+
+    @keyframes mover-up {
+
+        0%{
+            transform: translateY(px);
+        }
+
+        100%{
+            transform: translateY(-10px);
+        }
+        
+    }
+
+
+
+ 
+
+
+
+
+    

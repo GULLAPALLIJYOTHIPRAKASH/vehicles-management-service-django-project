@@ -1,0 +1,171 @@
+        /* contact us styles */
+
+
+        .contact-us-container{
+            width: 100%;
+            height: 100%;
+        }
+
+        .contact-us-section .img-container{
+
+            aspect-ratio: 355/300;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+
+        .contact-us-section .img-container img{
+
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+
+        }
+
+        .contact-text-center   .contact-us-info{
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+      .contact-text-center  .contact-form{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 30px;
+
+        }
+        .contact-form .name , .email,.message{
+
+            font-size: 16px;
+            height: 45px;
+            letter-spacing: 1px;
+            line-height: 25px;
+            padding-left: 15px;
+            padding-right: 15px;
+            border: 1px solid rgba(0, 0, 0, 0.562);
+            border-radius:2px;
+            
+        }
+
+        .contact-form .message{
+            height: unset;
+            resize: vertical;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        .contact-form .message:focus{
+
+            outline-color: var(--section-underline-bg);
+            transition: var(--primary-transition);
+
+            
+        }
+
+        .contact-form .name:focus{
+
+        outline-color: var(--section-underline-bg);
+        transition: var(--primary-transition);
+
+
+        }
+        .contact-form .email:focus{
+
+        outline-color: var(--section-underline-bg);
+        transition: var(--primary-transition);
+
+
+        }
+
+        
+
+
+
+
+        .contact-form .submit-btn{
+            width: 100%;
+            min-height: 45px;
+            color: var(--clr-white);
+            background-color: var(--section-underline-bg);
+            font-size: 16px;
+            font-weight: bold;
+            text-transform: capitalize;
+            letter-spacing: 1px;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            transition: var(--primary-transition);
+        
+        }
+
+        .contact-form .submit-btn:hover{
+
+            background-color: rgb(225, 101, 111);
+
+        }
+
+        .contact-form .submit-btn:active{
+            transform: var(--primary-scale);
+        }
+
+        @media screen and (min-width: 992px) {
+
+            .contact-us-section .img-container{
+
+                aspect-ratio: 400/300;
+                overflow: hidden;
+            }
+
+            .contact-us-section .img-container img{
+
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                overflow: hidden;
+            }
+
+            .contact-us-section{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+            }
+
+            .img-container, .contact-text-component{
+                flex:0 0 calc(50% - 30px);
+
+
+            }
+
+            
+        }
+
+
+
+
+    /* contact us form */
+
+        @media screen and (max-width:991px) {
+
+        .mobile-width{
+        width: 100%;
+        }
+
+        }
+
+
+        @media screen and (min-width:992px) {
+
+        .desktop-width{
+        width: 100%;
+        }
+
+        }

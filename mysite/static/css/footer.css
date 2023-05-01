@@ -1,0 +1,108 @@
+/* footer styles */
+.footer-container{
+    width: 100%;
+    min-height: 300px;
+    background-image: url(../assets/footer.jpg);
+    background-repeat: no-repeat;
+    background-size:cover ;
+    background-position: center;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+
+}
+
+.footer-container::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.444);
+    z-index: -1;
+}
+
+.footer-container .footer-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.footer-links-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.footer-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.footer-link{
+    color: var(--clr-white);
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    padding:5px 10px;
+
+}
+
+.footer-links .active,.footer-links .footer-link:hover{
+    text-decoration: underline 2px solid var(--clr-white);
+}
+
+.footer-social-links-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-social-links{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-social-links  .footer-social-link img{
+
+    width: 35px;
+    height: 35px;
+    border: 2px solid var(--clr-white);
+    padding: 5px;
+    border-radius: 10px;
+    transition: var(--primary-transition);
+}
+
+.footer-social-links  .footer-social-link img:hover{
+    transform: translateY(-4px);
+    border-color: var(--clr-black);
+    
+}
+
+.footer-copyright p{
+    color: var(--clr-white);
+    font-size: 20px;
+    text-transform: capitalize;
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+

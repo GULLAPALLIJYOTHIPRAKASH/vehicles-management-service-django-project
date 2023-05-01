@@ -1,0 +1,174 @@
+        /* navbar styles */
+        .navbar-container{
+            width: 100%;
+            min-height: 50px;
+            /* border: 2px solid red; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(29, 26, 26, 0.444);
+            top: -70px;
+           
+            
+
+
+        }
+
+         .nav-sticky{
+
+            position: sticky;
+            top: 0;
+            left: 0;
+            z-index: 9;
+            transform: translate(0%);
+            transition: var(--primary-transition);
+        }
+
+
+        .navbar-center .logo-section{
+            width: 30px;
+           
+         
+        }
+
+        .hamburger{
+            width:30px;
+            justify-self: flex-end;
+           
+            
+        }
+       
+        .nav-links-main{
+            display: none;
+        }
+
+        .nav-button-links-main{
+            display: none;
+        }
+
+        .navbar-center{
+            width: 100%;
+            height: 100%;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            justify-content: center;
+            align-items: center;
+        }
+
+
+
+        @media screen and (min-width:992px) {
+
+            .navbar-container{
+                min-height: 70px;
+
+            }
+
+        .navbar-center .logo-section{
+         width: 50px;
+         
+        }
+
+        
+
+            .hamburger{
+                display: none;
+            }
+
+            .navbar-center{
+                width: 100%;
+                height: 100%;
+                display: grid;
+                grid-template-columns: repeat(3,1fr);
+                justify-content: center;
+                align-items: center;
+            }
+          .nav-links-main{
+               
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .nav-links-main  .nav-links{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 30px;
+            }
+
+            .nav-links-main   .nav-link{
+
+                color:var(--clr-white);
+                font-size:16px;
+                font-weight: bold;
+                text-transform: capitalize;
+                text-align: center;
+                letter-spacing: 1px;
+                padding: 5px 10px;
+                border:2px solid rgb(255, 255, 255) ;
+                border-radius:10px ;
+                transition: var(--primary-transition);
+                
+            }
+
+            .nav-links  .active ,.nav-links-main  .nav-link:hover{
+                
+                background-color: var(--clr-white);
+                color:var(--clr-thin-black);
+                /* outline:2px solid var(--clr-white) ;
+                outline-offset: 5px; */
+              
+            
+            }
+
+            .nav-button-links-main{
+                display: flex;
+                justify-content: flex-end;
+                align-items: flex-end;
+            }
+            
+            .nav-button-links{
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap:20px;            
+            }
+
+            .nav-button-links .nav-button-link{
+                color: var(--clr-white);
+                background-color: transparent;
+                font-size: 16px;
+                font-weight: 500;
+                text-transform: capitalize;
+                letter-spacing: 1px;
+                text-align: center;
+                border: 2px solid var(--clr-white);
+                border-radius: 5px;
+                padding: 5px 10px;
+                cursor: pointer;
+                transition: var(--secondary-transition);
+
+
+            }
+
+            .nav-button-links .nav-button-link:hover{
+                background-color: var(--clr-white);
+                color:var(--clr-black);
+                /* transform: scale(1.2); */
+                /* outline:2px solid var(--clr-white) ;
+                outline-offset: 5px; */
+
+            }
+
+                /* activate button login & register */
+            .nav-button-links .active,.nav-button-links .nav-button-link:hover{
+                background-color: var(--clr-white);
+                color:var(--clr-black);
+            }
+
+            .nav-button-links-main .nav-button-link:active{
+                transform: var(--primary-scale);
+            }   
+        }

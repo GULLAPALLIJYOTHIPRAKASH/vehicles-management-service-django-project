@@ -1,0 +1,291 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="{%  static 'icons/logo_bike.svg' %}" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/2373475470.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../static/css/common-style.css">
+    <link rel="stylesheet" href="../static/css/navbar.css">
+    <link rel="stylesheet" href="../static/css/banner.css">
+    <link rel="stylesheet" href="../static/css/contact-us.css">
+    <link rel="stylesheet" href="../static/css/about-section.css">
+    <link rel="stylesheet" href="../static/css/sidebar.css">
+    <link rel="stylesheet" href="../static/css/footer.css">
+    <title>Vehicle service</title>
+    <style>
+        @media screen and (min-width: 992px) {
+
+/* navbar button styles small change */
+
+.nav-button-links-main{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.nav-button-links{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;            
+}
+
+}
+
+/* sidebar button style small change */
+
+
+.sidebar-button-links-main{
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 30px;
+}
+
+.sidebar-button-links{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 15px;
+}
+
+.sidebar-button-link{
+
+border: none;
+}
+
+.contact-us-container{
+            width: 100%;
+            height: 100%;
+        }
+
+        .contact-us-section{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .contact-us-section .img-container{
+
+            aspect-ratio: 355/300;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+
+        .contact-us-section .img-container img{
+
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+
+        }
+
+        
+
+        
+    </style>
+</head>
+<body >
+         <!-- navbar start -->
+         <nav class="navbar-container">
+            <div class="navbar-center wrapper">
+                <div class="logo-section">
+                    <a href="/"> <img src="{% static '/icons/logo_bike.svg' %}" alt="logo"></a>
+                </div>
+
+                <div class="hamburger">
+                    <!-- <a href="#">  -->
+                        <img src="{% static '/icons/bars.svg' %}" alt="hamburger"> 
+                    <!-- </a> -->
+                </div>
+
+                <div class="nav-links-main">
+                    <ul class="nav-links">
+                        <li><a href="/" class="nav-link " >home</a></li>
+                        <li><a href="/about_page" class="nav-link">about</a></li>
+                        <li><a href="/services_page " class="nav-link ">service</a></li>
+                        <!-- <li><a href="./facilities.html" class="nav-link">facilities</a></li> -->
+                        <li><a href="/contact_page" class="nav-link active">contact</a></li>
+                        
+                    </ul>
+                </div>
+
+                <div class="nav-button-links-main">
+                     <ul class="nav-button-links">
+                        <li><a href="/customerclick"><button class="nav-button-link">customer</button></a></li>
+                        <li><a href="/mechanicsclick"><button class="nav-button-link">mechanic</button></a></li>
+                        <li><a href="/adminclick"><button class="nav-button-link">admin</button></a></li>
+                     </ul>
+                </div>
+
+            </div>
+         </nav>
+         <!-- navbar end -->
+
+         <!-- sidebar start -->
+         <aside class="sidebar-container ">
+            <div class="sidebar-center wrapper">
+                <div class="header-section">
+                    <div class="sidebar-logo-section">
+                        <a href="/">
+                            <img src="{% static '/icons/logo_bike.svg' %}" alt="logo">
+                        </a>
+                    </div>
+                    <div class="sidebar-close">
+                        <!-- <a href="#"> -->
+                            <img src="{% static '/icons/close.svg' %}" alt="sidebar-close">
+                        <!-- </a> -->
+                    </div>
+                </div>
+                <div class="sidebar-links-main">
+                    <ul class="sidebar-links">
+                        <li><a href="/"  class="sidebar-link ">home</a></li>
+                        <li><a href="/about_page"  class="sidebar-link">about</a></li>
+                        <li><a href="/services_page"  class="sidebar-link">services</a></li>
+                        <!-- <li><a href="./facilities.html" class="sidebar-link">facilities</a></li> -->
+                        <li><a href="/contact_page" class="sidebar-link active">contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-button-links-main">
+                    <ul class="sidebar-button-links">
+                        <li><a href="/customerclick"><button class="sidebar-button-link">customer</button></a></li>
+                        <li><a href="/mechanicsclick"><button  class="sidebar-button-link">mechanic</button></a></li>
+                        <li><a href="/adminclick"><button  class="sidebar-button-link">admin</button></a></li>
+                    </ul>
+                </div>
+            </div>
+         </aside>
+         <!-- sidebar end -->
+
+
+        <!-- banner section start -->
+        <div class="hero-section-container">
+            <div class="hero-section-center">
+                <div class="img-component">
+                    <div class="img-container">
+                        <img src="{%  static 'assets/contact-banner.jpg' %}" alt="banner-img">
+                    </div>
+                </div>
+                <section class="hero-section paddingTopMobile-thirty paddingBottomMobile-thirty">
+                    <div class="hero-content text-center">
+                        <h1 class="hero-title">welcome to the  vehicles garage</h1>
+                        <p class="desc">contact us for more information</p>
+                       
+    
+                    </div>
+                </section>
+            </div>
+            </div>
+        <!-- banner section end -->
+
+
+        <!-- contact us section start -->
+        <div class="contact-us-container">
+            <div class="contact-us-center wrapper">
+                <!--  added  common styles header title and uderline  start-->
+                <div class="heading-section paddingTopDesktop-fifty paddingTopMobile-fifty">
+                    <h3 class="title">feedback</h3>
+                    <div class="underline"></div>
+                </div>
+                <!--  added  common styles header title and uderline  end-->
+
+          
+               <section class="contact-us-section paddingTopDesktop-fifty paddingTopMobile-fifty paddingBottomDesktop-fifty paddingBottomMobile-fifty">
+                      
+                <div class="img-container paddingBottomMobile-fifty">
+                  <div>
+                    <img src="{%  static 'assets/feedback.jpg' %}" alt="">
+                  </div>
+                  
+                  <div class="button-container paddingTopDesktop-ten paddingTopMobile-ten">
+                    <a href="/" class="about-btn">Home</a>
+                </div>
+              </div>
+                      
+            </section>
+                    
+                   
+               
+               
+                
+
+            </div>
+        </div>
+        <!-- contact us section end -->
+        
+            
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+         <!-- footer start -->
+         <footer class="footer-container">
+            <div class="footer-center wrapper">
+                <div class="footer-links-main">
+                    <ul class="footer-links paddingTopDesktop-fifty paddingTopMobile-fifty">
+                        <li><a href="/" class="footer-link ">home</a></li>
+                        <li><a href="/about_page" class="footer-link ">about</a></li>
+                        <li><a href="/services_page" class="footer-link">services</a></li>
+                        <!-- <li><a href="./facilities.html" class="footer-link">facilities</a></li> -->
+                        <li><a href="/contact_page" class="footer-link active">contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-social-links-main">
+                    <ul class="footer-social-links">
+                        <li class="footer-social-link">
+                            <a href="#"><img src="{% static 'icons/facebook.svg' %}" alt="facebook"></a>
+                        </li>
+                        <li class="footer-social-link">
+                            <a href="#"><img src="{% static 'icons/instagram.svg' %}" alt="instagram"></a>
+                        </li>
+                        <li class="footer-social-link">
+                            <a href="#"><img src="{% static 'icons/email.svg' %}" alt="email"></a>
+                        </li>
+                        <li class="footer-social-link">
+                            <a href="#"><img src="{% static 'icons/linkedin.svg' %}" alt="linkedin"></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-copyright">
+                    <p>copyright  2023 - <span class="copyright-date">2024</span>, made by gullapalli jyothi prakash
+                    </p>
+                </div>
+            </div>
+         </footer>
+         <!-- footer end -->
+
+
+         <script src="{% static 'js/app.js' %}"></script>
+        
+</body>
+</html>

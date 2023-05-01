@@ -1,0 +1,7 @@
+Activate Your Account
+
+  Hi {{ user.first_name }}
+  Thank you for joining our site! Please click on the link below to activate your account:
+  {{ domain }}{% url 'activate-cust' uidb64=uid token=token %} Activate Your Account
+  
+  Thank you!

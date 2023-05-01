@@ -1,0 +1,10 @@
+
+   
+   Verify Your Email
+
+    Verify Your Email
+    Hello {{ user.username }}
+    Thank you for signing up for our service. Please click the following link to activate your account
+    {{ activate_url }}">Activate My Account
+    If you did not sign up for our service, please ignore this email
+    Thank you

@@ -1,0 +1,428 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="{%  static 'icons/logo_bike.svg' %}" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/2373475470.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../static/css/common-style.css">
+    <link rel="stylesheet" href="../static/css/navbar.css">
+    <link rel="stylesheet" href="../static/css/banner.css">
+    <link rel="stylesheet" href="../static/css/about-section.css">
+    <link rel="stylesheet" href="../static/css/about-page.css">
+    <link rel="stylesheet" href="../static/css/contact-home.css">
+    <link rel="stylesheet" href="../static/css/sidebar.css">
+    <link rel="stylesheet" href="../static/css/footer.css">
+    <link rel="stylesheet" href="../static/css/about-section.css">
+    <title>Vehicle service</title>
+    <style>
+        @media screen and (min-width: 992px) {
+
+/* navbar button styles small change */
+
+.nav-button-links-main{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.nav-button-links{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;            
+}
+
+}
+
+/* sidebar button style small change */
+
+
+.sidebar-button-links-main{
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 30px;
+}
+
+.sidebar-button-links{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 15px;
+}
+
+.sidebar-button-link{
+
+border: none;
+}
+
+
+    
+        
+    </style>
+</head>
+<body >
+         <!-- navbar start -->
+         <nav class="navbar-container">
+            <div class="navbar-center wrapper">
+                <div class="logo-section">
+                    <a href="/"> <img src="{% static '/icons/logo_bike.svg' %}" alt="logo"></a>
+                </div>
+
+                <div class="hamburger">
+                    <!-- <a href="#">  -->
+                        <img src="{% static '/icons/bars.svg' %}" alt="hamburger"> 
+                    <!-- </a> -->
+                </div>
+
+                <div class="nav-links-main">
+                    <ul class="nav-links">
+                        <li><a href="/" class="nav-link " >home</a></li>
+                        <li><a href="/about_page" class="nav-link active">about</a></li>
+                        <li><a href="/services_page " class="nav-link">service</a></li>
+                        <!-- <li><a href="./facilities.html" class="nav-link">facilities</a></li> -->
+                        <li><a href="/contact_page" class="nav-link">contact</a></li>
+                        
+                    </ul>
+                </div>
+
+                <div class="nav-button-links-main">
+                     <ul class="nav-button-links">
+                        <li><a href="/customerclick"><button class="nav-button-link">customer</button></a></li>
+                        <li><a href="/mechanicsclick"><button class="nav-button-link">mechanic</button></a></li>
+                        <li><a href="/adminclick"><button class="nav-button-link">admin</button></a></li>
+                     </ul>
+                </div>
+
+            </div>
+         </nav>
+         <!-- navbar end -->
+
+         <!-- sidebar start -->
+         <aside class="sidebar-container ">
+            <div class="sidebar-center wrapper">
+                <div class="header-section">
+                    <div class="sidebar-logo-section">
+                        <a href="/">
+                            <img src="{% static '/icons/logo_bike.svg' %}" alt="logo">
+                        </a>
+                    </div>
+                    <div class="sidebar-close">
+                        <!-- <a href="#"> -->
+                            <img src="{% static '/icons/close.svg' %}" alt="sidebar-close">
+                        <!-- </a> -->
+                    </div>
+                </div>
+                <div class="sidebar-links-main">
+                    <ul class="sidebar-links">
+                        <li><a href="/"  class="sidebar-link ">home</a></li>
+                        <li><a href="/about_page"  class="sidebar-link active">about</a></li>
+                        <li><a href="/services_page"  class="sidebar-link">services</a></li>
+                        <!-- <li><a href="./facilities.html" class="sidebar-link">facilities</a></li> -->
+                        <li><a href="/contact_page" class="sidebar-link">contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-button-links-main">
+                    <ul class="sidebar-button-links">
+                        <li><a href="/customerclick"><button class="sidebar-button-link">customer</button></a></li>
+                        <li><a href="/mechanicsclick"><button  class="sidebar-button-link">mechanic</button></a></li>
+                        <li><a href="/adminclick"><button  class="sidebar-button-link">admin</button></a></li>
+                    </ul>
+                </div>
+            </div>
+         </aside>
+         <!-- sidebar end -->
+
+
+        <!-- banner section start -->
+        <div class="hero-section-container">
+        <div class="hero-section-center ">
+            <div class="img-component">
+                <div class="img-container">
+                    <img src="{%  static 'assets/about-banner.jpg' %}" alt="banner-img">
+                </div>
+            </div>
+            <section class="hero-section paddingTopMobile-thirty paddingBottomMobile-thirty">
+                <div class="hero-content text-center">
+                    <h1 class="hero-title">welcome to the  vehicles garage</h1>
+                    <p class="desc">our success is build with customers values</p>
+                    <!-- <div class="button-container">
+                        <a href="#" class="light-btn">let's started</a>
+                    </div> -->
+
+                </div>
+            </section>
+        </div>
+        </div>
+        <!-- banner section end -->
+
+
+
+        <!-- about  section  start-->
+        <div class="about-section-container">
+            <div class="about-center wrapper">
+
+                <!--  added  common styles header title and uderline  start -->
+                <div class="heading-section paddingTopMobile-fifty   paddingTopDesktop-fifty">
+                    <h3 class="title">about Us</h3>
+                    <div class="underline"></div> 
+                </div>
+                <!--  added  common styles header title and uderline  end -->
+
+                <section class="about-page paddingTopMobile-fifty  paddingTopDesktop-fifty paddingBottomMobile-fifty paddingBottomDesktop-fifty">
+                    
+                    <!-- single about-page start -->
+                    <article class="single-about-page">
+                    <div class="about-page-info">
+                        <p class="about-page-desc">Our trained technicians at  Vehicle Garage Service, can service any vehicles. We drive on the know-how and technology of the Vehicle Garage network to offer you excellent performance at a fair price.</p>
+                        <p class="about-page-desc">Vehicles Garage Service is one of the world's largest independent workshop chains. Our international service network encompasses more than 15,000 authorized workshops in 150 countries.With our wide range of expert services, we can offer everything you could possibly need for your bike and car service - from inspection, periodic maintenance, accidental repairs, replacement of genuine auto parts, value added services that puts and extra smile on your face.In India, we have over 270 Vehicles Garage Service workshops, so you are sure to find one local to you who will be happy to assist you.</p>
+                        <p class="about-page-desc">When you visit a Vehicles Garage Service you can depend on our expertise to get the job done. Regardless of how well you know your car, you can always feel confident in the advice you are given and the standard of workmanship you will receive. That’s why Vehicles Garage have produced this Code of Practice for our approved network of garages.</p>
+                        <p class="about-page-desc">Our exceptional quality can be defined as the sum total of first class products, professional service and the satisfaction of customer expectations. Our Vehicles Garage Service workshops make their customers welcome, do a professional job and have the vehicle ready for collection on time.</p>
+                        <p class="about-page-desc">Defined standards and established processes help to ensure we can always offer the best solution. Regular quality checks make sure our standards are maintained. These form the basis for our efforts to carry on improving – with particular emphasis on training and qualifications.</p>
+                    </div>
+                </article>
+                    <!-- single about-page end -->
+                </section>
+
+                <section class="about-section three-template-column  paddingTopMobile-fifty paddingTopDesktop-fifty paddingBottomMobile-fifty paddingBottomDesktop-fifty">
+                    
+                    <!-- single about start -->
+                    <article class="single-about">
+                        <div class="img-container">
+                            <img src="{% static '/assets/about-permium-quality.jpg' %}" alt="about-expert">
+                        </div>
+                    <div class="about-info">
+                        <h3 class="about-name">permium quality</h3>
+                        <p class="about-desc">We  are using permium materials to repair the vehicles</p>
+                    </div>
+                    </article> 
+                    <!-- single about end --> 
+                    
+                    <!-- single about start -->
+                    <article class="single-about">
+                        <div class="img-container">
+                            <img src="{% static '/assets/about-expert.jpg' %}" alt="about-expert">
+                        </div>
+                    <div class="about-info">
+                        <h3 class="about-name">our experts</h3>
+                        <p class="about-desc">We are skilled in vehicles repairing and we are ready to provide good service.</p>
+                    </div>
+                    </article> 
+                    <!-- single about end --> 
+
+
+
+                    <!-- single about start -->
+                      <article class="single-about">
+                        <div class="img-container">
+                            <img src="{% static '/assets/about-customer.jpg' %}" alt="about-expert">
+                        </div>
+                    <div class="about-info">
+                        <h3 class="about-name">customer satisfaction</h3>
+                        <p class="about-desc">Our aim is to satisfy the customers and their vehicles.</p>
+                    </div>
+                    </article> 
+                    <!-- single about end --> 
+                </section>
+
+                <!-- <div class="button-container   text-center paddingBottomDesktop-fifty paddingBottomMobile-fifty ">
+                    <a href="/about_page" class="about-btn">view all</a>
+                </div> -->
+            </div>
+        </div>
+        <!-- about us section  end-->
+
+
+         <!-- contact us section  start-->
+         <div class="contact-section-container"> 
+            <div class="contact-center wrapper">
+
+                <!--  added  common styles header title and uderline  start-->
+                <div class="heading-section paddingTopDesktop-fifty paddingTopMobile-fifty">
+                    <h3 class="title">contact us</h3>
+                    <div class="underline"></div>
+                </div>
+                <!--  added  common styles header title and uderline  end-->
+
+                <section class="contact-section three-template-column paddingTopMobile-fifty paddingTopDesktop-fifty paddingBottomMobile-fifty paddingBottomDesktop-fifty">
+                    
+                    <!--single  contact start-->
+                    <article class="single-contact free_pickup-bg">
+                        <div class="img-container">
+                            <img src="{% static '/assets/free_pickup.svg' %}" alt="contact us">
+                        </div>
+                        <div class="contact-info">
+                            <p class="contact-desc">Free Pickup Drop</p>
+                        </div>
+                    </article>
+                    <!--single  contact end-->
+
+                    <!--single  contact start-->
+                    <article class="single-contact available-bg">
+                        <div class="img-container">
+                            <img src="{% static '/assets/clock.svg' %}" alt="contact us">
+                        </div>
+                        <div class="contact-info">
+                            <p class="contact-desc">Available 24/7 Service</p>
+                        </div>
+                    </article>
+                    <!--single  contact end-->
+
+                    <!--single  contact start-->
+                    <article class="single-contact email-bg">
+                        <div class="img-container">
+                            <img src="{% static '/assets/email_clr.svg' %}" alt="contact us">
+                        </div>
+                        <div class="contact-info">
+                            <p class="contact-desc">vehiclesgarage@gmail.com</p>
+                        </div>
+                    </article>
+                    <!--single  contact end-->
+
+                    <!--single  contact start-->
+                    <article class="single-contact mobile-bg">
+                        <div class="img-container">
+                            <img src="{% static '/assets/phone.svg' %}" alt="contact us">
+                        </div>
+                        <div class="contact-info">
+                            <p class="contact-desc">+91123456790</p>
+                        </div>
+                    </article>
+                    <!--single  contact end-->
+
+                    <!--single  contact start-->
+                    <article class="single-contact parts-bg">
+                        <div class="img-container">
+                            <img src="{% static '/assets/parts.svg' %}" alt="contact us">
+                        </div>
+                        <div class="contact-info">
+                            <p class="contact-desc">Genuine Parts</p>
+                        </div>
+                    </article>
+                    <!--single  contact end-->
+                    <!--single  contact start-->
+                    <article class="single-contact warranty-bg">
+                        <div class="img-container">
+                            <img src="{% static '/assets/warranty.svg' %}" alt="contact us">
+                        </div>
+                        <div class="contact-info">
+                            <p class="contact-desc">30 Days Warranty</p>
+                        </div>
+                    </article>
+                    <!--single  contact end-->
+
+                    <!--single  contact start-->
+                    <article class="single-contact wallet-bg">
+                        <div class="img-container">
+                            <img src="{% static '/assets/wallet.svg' %}" alt="contact us">
+                        </div>
+                        <div class="contact-info">
+                            <p class="contact-desc">Affordable Prices</p>
+                        </div>
+                    </article>
+                    <!--single  contact end-->
+
+                    <!--single  contact start-->
+                    <article class="single-contact worker-bg">
+                        <div class="img-container">
+                            <img src="{% static '/assets/mechanic.svg' %}" alt="contact us">
+                        </div>
+                        <div class="contact-info">
+                            <p class="contact-desc">Expert Mechanics</p>
+                        </div>
+                    </article>
+                    <!--single  contact end-->
+
+                    <!--single  contact start-->
+                    <article class="single-contact team-bg">
+                        <div class="img-container">
+                            <img src="{% static '/assets/team.svg' %}" alt="contact us">
+                        </div>
+                        <div class="contact-info">
+                            <p class="contact-desc">Our Team</p>
+                        </div>
+                    </article>
+                    <!--single  contact end-->
+
+                </section>
+                <div class="button-container text-center paddingBottomMobile-fifty paddingBottomDesktop-fifty">
+                    <a href="/contact_page" class="contact-btn">contact us</a>
+                </div>
+
+            </div>
+         </div>
+         <!-- contact us section  end-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+         <!-- footer start -->
+         <footer class="footer-container">
+            <div class="footer-center wrapper">
+                <div class="footer-links-main">
+                    <ul class="footer-links paddingTopDesktop-fifty paddingTopMobile-fifty">
+                        <li><a href="/" class="footer-link ">home</a></li>
+                        <li><a href="/about_page" class="footer-link active">about</a></li>
+                        <li><a href="/services_page" class="footer-link">services</a></li>
+                        <!-- <li><a href="./facilities.html" class="footer-link">facilities</a></li> -->
+                        <li><a href="/contact_page" class="footer-link">contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-social-links-main">
+                    <ul class="footer-social-links">
+                        <li class="footer-social-link">
+                            <a href="#"><img src="{% static 'icons/facebook.svg' %}" alt="facebook"></a>
+                        </li>
+                        <li class="footer-social-link">
+                            <a href="#"><img src="{% static 'icons/instagram.svg' %}" alt="instagram"></a>
+                        </li>
+                        <li class="footer-social-link">
+                            <a href="#"><img src="{% static 'icons/email.svg' %}" alt="email"></a>
+                        </li>
+                        <li class="footer-social-link">
+                            <a href="#"><img src="{% static 'icons/linkedin.svg' %}" alt="linkedin"></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-copyright">
+                    <p>copyright  2023 - <span class="copyright-date">2024</span>, made by gullapalli jyothi prakash
+                    </p>
+                </div>
+            </div>
+         </footer>
+         <!-- footer end -->
+
+
+         <script src="{% static 'js/app.js' %}"></script>
+        
+</body>
+</html>

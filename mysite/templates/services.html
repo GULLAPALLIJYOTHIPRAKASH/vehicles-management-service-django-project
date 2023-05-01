@@ -1,0 +1,557 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="{% static 'icons/logo_bike.svg' %}" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/2373475470.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../static/css/common-style.css">
+    <link rel="stylesheet" href="../static/css/navbar.css">
+    <link rel="stylesheet" href="../static/css/banner.css">
+    <link rel="stylesheet" href="../static/css/service-section.css">
+    <link rel="stylesheet" href="../static/css/accessories-home.css">
+    <link rel="stylesheet" href="../static/css/contact-home.css">
+    <link rel="stylesheet" href="../static/css/sidebar.css">
+    <link rel="stylesheet" href="../static/css/footer.css">
+    <title>Vehicle service</title>
+    <style>
+                @media screen and (min-width: 992px) {
+
+/* navbar button styles small change */
+
+.nav-button-links-main{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.nav-button-links{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;            
+}
+
+}
+
+/* sidebar button style small change */
+
+
+.sidebar-button-links-main{
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 30px;
+}
+
+.sidebar-button-links{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 15px;
+}
+
+.sidebar-button-link{
+
+border: none;
+}
+
+    </style>
+</head>
+<body >
+        <!-- navbar start -->
+        <nav class="navbar-container">
+        <div class="navbar-center wrapper">
+            <div class="logo-section">
+                <a href="/"> <img src="{% static '/icons/logo_bike.svg' %}" alt="logo"></a>
+            </div>
+
+            <div class="hamburger">
+                <!-- <a href="#">  -->
+                    <img src="{% static '/icons/bars.svg' %}" alt="hamburger"> 
+                <!-- </a> -->
+            </div>
+
+            <div class="nav-links-main">
+                <ul class="nav-links">
+                    <li><a href="/" class="nav-link " >home</a></li>
+                    <li><a href="/about_page" class="nav-link">about</a></li>
+                    <li><a href="/services_page" class="nav-link active ">service</a></li>
+                    <!-- <li><a href="./facilities.html" class="nav-link">facilities</a></li> -->
+                    <li><a href="/contact_page" class="nav-link ">contact</a></li>
+                    
+                </ul>
+            </div>
+
+            <div class="nav-button-links-main">
+                    <ul class="nav-button-links">
+                    <li><a href="/customerclick"><button class="nav-button-link">customer</button></a></li>
+                    <li><a href="/mechanicsclick"><button class="nav-button-link">mechanic</button></a></li>
+                    <li><a href="/adminclick"><button class="nav-button-link">admin</button></a></li>
+                    </ul>
+            </div>
+
+        </div>
+        </nav>
+        <!-- navbar end -->
+
+        <!-- sidebar start -->
+        <aside class="sidebar-container ">
+        <div class="sidebar-center wrapper">
+            <div class="header-section">
+                <div class="sidebar-logo-section">
+                    <a href="/">
+                        <img src="{% static 'icons/logo_bike.svg' %}" alt="logo">
+                    </a>
+                </div>
+                <div class="sidebar-close">
+                    <!-- <a href="#"> -->
+                        <img src="{% static 'icons/close.svg' %}" alt="sidebar-close">
+                    <!-- </a> -->
+                </div>
+            </div>
+            <div class="sidebar-links-main">
+                <ul class="sidebar-links">
+                    <li><a href="/"  class="sidebar-link ">home</a></li>
+                    <li><a href="/about_page"  class="sidebar-link">about</a></li>
+                    <li><a href="/services_page"  class="sidebar-link active">services</a></li>
+                    <!-- <li><a href="./facilities.html" class="sidebar-link">facilities</a></li> -->
+                    <li><a href="/contact_page" class="sidebar-link ">contact</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-button-links-main">
+                <ul class="sidebar-button-links">
+                    <li><a href="/customerclick"><button class="sidebar-button-link">customer</button></a></li>
+                    <li><a href="/mechanicsclick"><button  class="sidebar-button-link">mechanic</button></a></li>
+                    <li><a href="/adminclick"><button  class="sidebar-button-link">admin</button></a></li>
+                </ul>
+            </div>
+        </div>
+        </aside>
+        <!-- sidebar end -->
+
+
+        <!-- banner section start -->
+        <div class="hero-section-container">
+            <div class="hero-section-center">
+                <div class="img-component">
+                    <div class="img-container">
+                        <img src="{%  static 'assets/services-banner.jpg' %}" alt="banner-img">
+                    </div>
+                </div>
+                <section class="hero-section paddingTopMobile-thirty paddingBottomMobile-thirty">
+                    <div class="hero-content text-center">
+                        <h1 class="hero-title">welcome to the  vehicles garage</h1>
+                        <p class="desc">we provide best services in the market</p>
+                        <!-- <div class="button-container">
+                            <a href="#" class="light-btn">let's started</a>
+                        </div> -->
+    
+                    </div>
+                </section>
+            </div>
+            </div>
+        <!-- banner section end -->
+
+
+         <!-- service section start -->
+         <div class="service-section-container " id="service">
+            <div class="service-center wrapper">
+
+            <!--  added  common styles header title and uderline  start-->
+            <div class="heading-section paddingTopMobile-fifty paddingTopDesktop-fifty">
+                <h3 class="title">our services</h3>
+                <div class="underline"></div>
+            </div>
+            <!--  added  common styles header title and uderline  end -->
+
+            <section class="service-section  three-template-column paddingTopMobile-fifty paddingTopDesktop-fifty  paddingBottomMobile-fifty paddingBottomDesktop-fifty ">
+               
+                <!-- single article start -->
+                <article class="single-service">
+                    <div class="img-container">
+                        <img src="{% static 'assets/car_month_service.png' %}" alt="car_month_service">
+                    </div>
+                    <p class="service-desc">periodic services</p>
+                </article>
+                <!-- single article end -->
+
+                <!-- single article start -->
+                <article class="single-service">
+                    <div class="img-container">
+                        <img src="{% static '/assets/car_ac_service.png' %}" alt="car_ac_service">
+                    </div>
+                    <p class="service-desc">engine repair</p>
+                </article>
+                <!-- single article end -->
+
+                <!-- single article start -->
+                <article class="single-service">
+                    <div class="img-container">
+                        <img src="{% static '/assets/car_battery_service.svg' %}" alt="car_battery_service">
+                    </div>
+                    <p class="service-desc">batteries repair</p>
+                </article>
+                <!-- single article end -->
+
+
+                <!-- single article start -->
+                <article class="single-service">
+                <div class="img-container">
+                <img src="{% static '/assets/car_tyre_service.svg' %}" alt="car_tyre_service">
+                </div>
+                <p class="service-desc">tyre &  wheel care</p>
+                </article>
+                <!-- single article end -->
+
+                <!-- single article start -->
+                <article class="single-service-car ">
+                <div class="car-img-container">
+                <img src="{% static '/assets/services-bg.png' %}" alt="car">
+                </div>
+                <div class="button-container text-center">
+                    <i class="fa-solid fa-arrow-down btn-down change-btn"></i>
+                    <i class="fa-solid fa-arrow-up btn-up change-btn"></i>
+                </div>
+                </article>
+                <!-- single article end -->
+
+                <!-- single article start -->
+                <article class="single-service">
+                <div class="img-container">
+                <img src="{% static '/assets/car_Clutch_Bumpers_service.png' %}" alt="car_Clutch_Bumpers_service">
+                </div>
+                <p class="service-desc">clutch & body part</p>
+                </article>
+                <!-- single article end -->
+
+                 </section>
+
+                 <!-- <div class="button-container text-center paddingBottomMobile-fifty paddingBottomDesktop-fifty">
+                    <a href="/services_page" class="service-btn">view all</a>
+                 </div> -->
+            </div>
+         </div>
+         <!-- service section end -->
+
+         
+         <!-- accessories section  start-->
+         <div class="accessories-section-container">
+            <div class="accessories-center wrapper">
+
+            <!--  added  common styles header title and uderline  start-->
+                <div class="heading-section paddingTopMobile-fifty paddingTopDesktop-fifty">
+                    <h3 class="title">our accessories</h3>
+                    <div class="underline"></div>
+                </div>
+            <!--  added  common styles header title and uderline  end-->
+
+                <section class="accessories-section three-template-column  paddingTopMobile-fifty paddingTopDesktop-fifty paddingBottomDesktop-fifty  paddingBottomMobile-fifty">
+
+                    <!-- single accessories start -->
+                    <article class="single-accessories accesories-1">
+                        <div class="img-container">
+                            <img src="{% static '/assets/accesories-1.png' %}" alt="accessories-1">
+                        </div>
+                        <p class="accessories-desc">batteries</p>
+                    </article>
+                    <!-- single accessories end -->
+
+                    <!-- single accessories start -->
+                    <article class="single-accessories accesories-2">
+                        <div class="img-container">
+                            <img src="{% static '/assets/accesories-2.png' %}" alt="accessories-3">
+                        </div>
+                        <p class="accessories-desc">disc brake</p>
+                    </article>
+                    <!-- single accessories end -->
+
+                    <!-- single accessories start -->
+                    <article class="single-accessories accesories-3">
+                        <div class="img-container">
+                            <img src="{% static '/assets/accesories-3.png' %}" alt="accessories-3">
+                        </div>
+                        <p class="accessories-desc">tyres</p>
+                    </article>
+                    <!-- single accessories end -->
+
+                    <!-- single accessories start -->
+                    <article class="single-accessories accesories-4">
+                        <div class="img-container">
+                            <img src="{% static '/assets/accesories-4.png' %}" alt="accessories-4">
+                        </div>
+                        <p class="accessories-desc">suspension</p>
+                    </article>
+                    <!-- single accessories end -->
+
+                    <!-- single accessories start -->
+                    <article class="single-accessories accesories-5">
+                        <div class="img-container">
+                            <img src="{% static '/assets/accesories-5.png' %}" alt="accessories-5">
+                        </div>
+                        <p class="accessories-desc">car bumper</p>
+                    </article>
+                    <!-- single accessories end -->
+
+                    <!-- single accessories start -->
+                    <article class="single-accessories accesories-6">
+                        
+                        <div class="img-container">
+                            <img src="{% static '/assets/accesories-6.png' %}" alt="accessories-6">
+                        </div>
+                        <p class="accessories-desc">car doors</p>
+                    </article>
+                    <!-- single accessories end -->
+                    
+                    <!-- single accessories start -->
+                    <article class="single-accessories accesories-7">
+                        
+                        <div class="img-container">
+                            <img src="{% static '/assets/accesories-7.png' %}" alt="accessories-7">
+                        </div>
+                        <p class="accessories-desc">head light</p>
+                    </article>
+                    <!-- single accessories end -->
+
+                    <!-- single accessories start -->
+                    <article class="single-accessories accesories-8">
+                        
+                        <div class="img-container">
+                            <img src="{% static '/assets/accesories-8.png' %}" alt="accessories-8">
+                        </div>
+                        <p class="accessories-desc">engine oil</p>
+                    </article>
+                    <!-- single accessories end -->
+
+                    <!-- single accessories start -->
+                    <article class="single-accessories accesories-9">
+                        
+                        <div class="img-container">
+                            <img src="{% static '/assets/accesories-9.png' %}" alt="accessories-9">
+                        </div>
+                        <p class="accessories-desc">oil filter</p>
+                    </article>
+                    <!-- single accessories end -->
+
+                    <!-- single accessories start -->
+                    <article class="single-accessories accesories-10">
+                        
+                        <div class="img-container">
+                            <img src="{% static '/assets/accesories-10.png' %}" alt="accessories-10">
+                        </div>
+                        <p class="accessories-desc">mirrors</p>
+                    </article>
+                    <!-- single accessories end -->
+
+                </section>
+            </div>
+         </div>
+         <!-- accessories section  end-->
+
+
+
+         <!-- contact us section  start-->
+         <div class="contact-section-container"> 
+            <div class="contact-center wrapper">
+
+                <!--  added  common styles header title and uderline  start-->
+                <div class="heading-section paddingTopDesktop-fifty paddingTopMobile-fifty">
+                    <h3 class="title">contact us</h3>
+                    <div class="underline"></div>
+                </div>
+                <!--  added  common styles header title and uderline  end-->
+
+                <section class="contact-section three-template-column paddingTopMobile-fifty paddingTopDesktop-fifty paddingBottomMobile-fifty paddingBottomDesktop-fifty">
+                    
+                    <!--single  contact start-->
+                    <article class="single-contact free_pickup-bg">
+                        <div class="img-container">
+                            <img src="{% static '/assets/free_pickup.svg' %}" alt="contact us">
+                        </div>
+                        <div class="contact-info">
+                            <p class="contact-desc">Free Pickup Drop</p>
+                        </div>
+                    </article>
+                    <!--single  contact end-->
+
+                    <!--single  contact start-->
+                    <article class="single-contact available-bg">
+                        <div class="img-container">
+                            <img src="{% static '/assets/clock.svg' %}" alt="contact us">
+                        </div>
+                        <div class="contact-info">
+                            <p class="contact-desc">Available 24/7 Service</p>
+                        </div>
+                    </article>
+                    <!--single  contact end-->
+
+                    <!--single  contact start-->
+                    <article class="single-contact email-bg">
+                        <div class="img-container">
+                            <img src="{% static '/assets/email_clr.svg' %}" alt="contact us">
+                        </div>
+                        <div class="contact-info">
+                            <p class="contact-desc">vehiclesgarage@gmail.com</p>
+                        </div>
+                    </article>
+                    <!--single  contact end-->
+
+                    <!--single  contact start-->
+                    <article class="single-contact mobile-bg">
+                        <div class="img-container">
+                            <img src="{% static '/assets/phone.svg' %}" alt="contact us">
+                        </div>
+                        <div class="contact-info">
+                            <p class="contact-desc">+91123456790</p>
+                        </div>
+                    </article>
+                    <!--single  contact end-->
+
+                    <!--single  contact start-->
+                    <article class="single-contact parts-bg">
+                        <div class="img-container">
+                            <img src="{% static '/assets/parts.svg' %}" alt="contact us">
+                        </div>
+                        <div class="contact-info">
+                            <p class="contact-desc">Genuine Parts</p>
+                        </div>
+                    </article>
+                    <!--single  contact end-->
+                    <!--single  contact start-->
+                    <article class="single-contact warranty-bg">
+                        <div class="img-container">
+                            <img src="{% static '/assets/warranty.svg' %}" alt="contact us">
+                        </div>
+                        <div class="contact-info">
+                            <p class="contact-desc">30 Days Warranty</p>
+                        </div>
+                    </article>
+                    <!--single  contact end-->
+
+                    <!--single  contact start-->
+                    <article class="single-contact wallet-bg">
+                        <div class="img-container">
+                            <img src="{% static '/assets/wallet.svg' %}" alt="contact us">
+                        </div>
+                        <div class="contact-info">
+                            <p class="contact-desc">Affordable Prices</p>
+                        </div>
+                    </article>
+                    <!--single  contact end-->
+
+                    <!--single  contact start-->
+                    <article class="single-contact worker-bg">
+                        <div class="img-container">
+                            <img src="{% static '/assets/mechanic.svg' %}" alt="contact us">
+                        </div>
+                        <div class="contact-info">
+                            <p class="contact-desc">Expert Mechanics</p>
+                        </div>
+                    </article>
+                    <!--single  contact end-->
+
+                    <!--single  contact start-->
+                    <article class="single-contact team-bg">
+                        <div class="img-container">
+                            <img src="{% static '/assets/team.svg' %}" alt="contact us">
+                        </div>
+                        <div class="contact-info">
+                            <p class="contact-desc">Our Team</p>
+                        </div>
+                    </article>
+                    <!--single  contact end-->
+
+                </section>
+                <div class="button-container text-center paddingBottomMobile-fifty paddingBottomDesktop-fifty">
+                    <a href="/contact_page" class="contact-btn">contact us</a>
+                </div>
+
+            </div>
+         </div>
+         <!-- contact us section  end-->
+        
+        
+            
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+         <!-- footer start -->
+         <footer class="footer-container">
+            <div class="footer-center wrapper">
+                <div class="footer-links-main">
+                    <ul class="footer-links paddingTopDesktop-fifty paddingTopMobile-fifty">
+                        <li><a href="/" class="footer-link ">home</a></li>
+                        <li><a href="/about_page" class="footer-link ">about</a></li>
+                        <li><a href="/services_page" class="footer-link active">services</a></li>
+                        <!-- <li><a href="./facilities.html" class="footer-link">facilities</a></li> -->
+                        <li><a href="/contact_page" class="footer-link ">contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-social-links-main">
+                    <ul class="footer-social-links">
+                        <li class="footer-social-link">
+                            <a href="#"><img src="{% static 'icons/facebook.svg' %}" alt="facebook"></a>
+                        </li>
+                        <li class="footer-social-link">
+                            <a href="#"><img src="{% static 'icons/instagram.svg' %}" alt="instagram"></a>
+                        </li>
+                        <li class="footer-social-link">
+                            <a href="#"><img src="{% static 'icons/email.svg' %}" alt="email"></a>
+                        </li>
+                        <li class="footer-social-link">
+                            <a href="#"><img src="{% static 'icons/linkedin.svg' %}" alt="linkedin"></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-copyright">
+                    <p>copyright  2023 - <span class="copyright-date">2024</span>, made by gullapalli jyothi prakash
+                    </p>
+                </div>
+            </div>
+         </footer>
+         <!-- footer end -->
+
+
+         <script src="{% static 'js/app.js'     %}"></script>
+         <script src="{% static 'js/serivce.js' %}"></script>
+        
+</body>
+</html>
